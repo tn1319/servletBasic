@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="" method="get" action="/servlet/PersonServlet">
+		<table border="1" cellspacing="0" cellpadding="3">
+			<tr>
+				<td width="50" align="center">이름</td>
+				<td align="center"><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td width="50" align="center">성별</td>
+				<td align="center">
+					<input type="radio" name="gender" value="0" checked>남
+				 	<input type="radio" name="gender" value="1">여
+				 </td>
+			</tr>
+			<tr>
+				<td width="50" align="center">취미</td>
+				<td align="center">
+					<input type="checkbox" name="hobby" value="독서">독서
+				 	<input type="checkbox" name="hobby" value="영화">영화
+				 	<input type="checkbox" name="hobby" value="음악">음악
+				 	<input type="checkbox" name="hobby" value="게임">게임
+				 	<input type="checkbox" name="hobby" value="운동">운동
+				 </td>
+			</tr>
+			<tr>
+				<td width="50" align="center" style="width:100px;">색깔</td>
+				<td align="center">
+					<select name="color">
+						<option value="red">빨강
+						<option value="green">초록
+						<option value="blue">파랑
+						<option value="magenta">보라
+						<option value="cyan">하늘
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td width="50" align="center" style="width:100px;">과목</td>
+				<td align="center">
+					<select name="subject" size="4" multiple>
+						<option value="JAVA">JAVA
+						<option value="JSP">JSP
+						<option value="SERVLET">SERVLET
+						<option value="SPRING">SPRING
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="SEND">
+					<input type="reset" value="CANCEL">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
